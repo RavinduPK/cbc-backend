@@ -32,7 +32,7 @@ app.use((req, res, next) => {
 const connectionstring = "mongodb+srv://admin:TJsod22520@cluster0.pqwfcqb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 mongoose.connect(connectionstring).then(() => {
-    console.log("Database Connected.");
+    console.log("Database Connected Successfully");
 }).catch((err) => {
     console.log("Database Connection failed.", err);
 });
